@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <title>One Page Site with Custom Navbar</title>
   </head>
   <body>
-    <!-- Custom Navbar -->
+    <!-- nav -->
     <nav class="nav-bar">
       <div class="logo">
-        <img class="Icon" src="assets/images/Icon.png" />
+        <img class="Icon" src="assets/images/Icon.png" alt="Icon" />
         <img src="assets/images/Nexcent.png" alt="Website Logo" />
       </div>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">☰</label>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">Services</a></li>
-        <li><a href="#services">Feature</a></li>
-        <li><a href="#contact">Product</a></li>
-        <li><a href="#contact">Testimonial</a></li>
-        <li><a href="#contact">FAQ</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-buttons">
         <button class="login-btn">Login</button>
@@ -29,64 +33,94 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="header">
-      <div class content-left>
+    <!-- Header -->
+    <header id="home">
+      <div class="content-left">
         <h1>
           Lessons and insights<br /><span class="color-txt">from 8 years</span>
         </h1>
         <p>
-          Where to grow your business as a photographer: site or social media?
+          Where should you grow your business as a photographer: a website or social media?
         </p>
         <button class="signup-btn2">Sign up</button>
       </div>
-      <div class content-right>
-        <img class="img2" src="assets/images/Illustration.png" />
+      <div class="content-right">
+        <img class="img2" src="assets/images/Illustration.png" alt="Hero Illustration" />
       </div>
     </header>
 
-    <!-- services Section -->
-    <section id="Services">
+    <!-- services -->
+    <section id="services">
       <h2>Our Clients</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur 
-      </p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
       <div>
-      <img src="assets/images/Clients Logos.png">
-    </div>
+        <img src="assets/images/Clients Logos.png" alt="Our Clients' Logos" />
+      </div>
     </section>
 
-    <!-- community Section -->
-    <section id="community">
-      <h2>Lorem ipsum dolor sit amet, consectetur </h2>
-      <div class="clients">
+    <!-- features-->
+    <section id="features">
+      <h2>Manage your entire community in a single system</h2>
+      
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, reiciendis, a ratione erro</p><div class="clients">
         <div class="card">
+          <img src="assets/images/Icon.png">
           <h3>Web Design</h3>
-          <p>Creative and modern designs to make your brand stand out.</p>
+          <p>Membership Organisations</p>
         </div>
         <div class="card">
-          <h3>Development</h3>
-          <p>Fast and responsive websites that perform on all devices.</p>
+          <img src="assets/images/Icon.png">
+          <h3>Deve</h3>
+          <p>Membership Organisations</p>
         </div>
         <div class="card">
-          <h3>SEO Optimization</h3>
-          <p>Improve your website's ranking and visibility online.</p>
+          <img src="assets/images/Icon.png">
+          <h3>SEO Optimin</h3>
+          <p>Membership Organisations</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <!-- products -->
+    <section id="products">
+      <div><img src="assets/images/rafiki.png"></div>
+      <div>
+      <h2>The unseen of spending three years at Pixelgrade</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem dignissimos officiis modi, quisquam laudantium. Laborum ducimus atque dolor aliquid esse tempore, molestiae,<br>vitae tenetur eaque voluptatum iusto quisquam modi!.<br></p>
+    </div>
+    <div class="button2">
+      <button class="login-btn">Login</button>
+    </div>
     </section>
 
-    <!-- Footer -->
+
+    <!-- products -->
+    <section id="offer">
+      <div><img src="assets/images/Illustration.png"></div>
+      <div>
+      <h2>How to design your site footer like we did</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. At quidem dignissimos officiis modi, quisquam laudantium. Laborum ducimus atque dolor aliquid esse tempore, molestiae,<br>vitae tenetur eaque voluptatum iusto quisquam modi!.<br></p>
+    </div>
+    <div>1234</div>
+    <div>1234</div>
+    <div>1234</div>
+    <div>1234</div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials">
+      <h2>What Our Clients Say</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+    </section>
+    <!-- footer -->
     <footer>
       <p>© 2025 Your Website. All rights reserved.</p>
     </footer>

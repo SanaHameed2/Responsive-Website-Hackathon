@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <title>One Page Site with Custom Navbar</title>
   </head>
   <body>
-    <!-- nav -->
+    <!-- Navbar -->
     <nav class="nav-bar">
       <div class="logo">
-        <img class="Icon" src="assets/images/Icon.png" alt="Icon" />
+        <img class="icon" src="assets/images/Icon.png" alt="Icon" />
         <img src="assets/images/Nexcent.png" alt="Website Logo" />
       </div>
       <input type="checkbox" id="menu-toggle" />
@@ -31,131 +39,178 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-buttons">
-        <button class="signup-btn">Sign up</button>
+        <button class="reg-btn">Register Now</button>
       </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header id="home">
-      <div class="content-left">
-        <h1>
-          Lessons and insights<br /><span class="color-txt">from 8 years</span>
-        </h1>
-        <p>
-          Where should you grow your business as a photographer: a website or
-          social media?
-        </p>
-        <div class="nav-buttons">
-          <button class="signup-btn">Sign up</button>
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="content-left">
+          <h1>
+            Lessons and insights<br />
+            <span class="color-txt">from 8 years</span>
+          </h1>
+          <p>
+            Where should you grow your business as a photographer: a website or social media?
+          </p>
+          <div class="Hero-btn">
+            <button class="register-btn">Register</button>
+          </div>
         </div>
-      </div>
-      <div class="content-right">
-        <img
-          class="img2"
-          src="assets/images/Illustration.png"
-          alt="Hero Illustration"
-        />
+        <div class="content-right">
+          <img class="img-hero" src="assets/images/Illustration.png" alt="Hero Illustration" />
+        </div>
       </div>
     </header>
 
-    <!-- services -->
-    <section id="services">
-      <h2>Our Clients</h2>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
-      <div>
-        <img src="assets/images/Clients Logos.png" alt="Our Clients' Logos" />
-      </div>
-    </section>
-
-    <!-- features-->
-    <section id="features">
-      <h2>Manage your entire community in a single system</h2>
-      <p class="subheading">Who is Nexcent suitable for?</p>
-      <div class="clients">
-        <div class="card">
-          <div class="icon-wrapper">
-            <img src="assets/images/Icon.png" alt="Membership Icon" />
-          </div>
-          <h3>Membership Organisations</h3>
-          <p>
-            Our membership management software provides full automation of
-            membership renewals and payments.
-          </p>
-        </div>
-        <div class="card">
-          <div class="icon-wrapper">
-            <img src="assets/images/Icon.png" alt="Association Icon" />
-          </div>
-          <h3>National Associations</h3>
-          <p>
-            Our membership management software provides full automation of
-            membership renewals and payments.
-          </p>
-        </div>
-        <div class="card">
-          <div class="icon-wrapper">
-            <img src="assets/images/Icon.png" alt="Clubs Icon" />
-          </div>
-          <h3>Clubs And Groups</h3>
-          <p>
-            Our membership management software provides full automation of
-            membership renewals and payments.
-          </p>
+    <!-- Our Clients Section -->
+    <section id="clients" class="clients-section">
+      <div class="container text-center">
+        <h2>Our Clients</h2>
+        <p class="client-subtext">We have been working with some Fortune 500+ clients</p>
+        <div class="client-logos">
+          <img src="assets/images/Clients Logos.png" alt="Client 1" />
         </div>
       </div>
     </section>
-    <!-- product -->
-    <section id="products">
-      <div class="image-content">
-        <img src="assets/images/rafiki.png" alt="Product Image" />
-      </div>
-    
-      <div class="text-content">
-        <h2>The unseen of spending three years at Pixelgrade</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. At quidem dignissimos
-          officiis modi, quisquam laudantium. Laborum ducimus atque dolor
-          aliquid esse tempore, molestiae, vitae tenetur eaque voluptatum iusto
-          quisquam modi!
-        </p>
-        <button class="signup-btn">Sign up</button>
+
+    <!-- Manage Community Section -->
+    <section id="community" class="community-section">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+        <div class="community-content">
+          <h2>Manage your entire community <br />in a single system</h2>
+          <p>Who is Nextcent suitable for?</p>
+          <ul class="community-list">
+            <li>
+              <img src="assets/images/Icon.png" />
+              <strong>Membership Organisations:</strong> Our membership management software provides full automation of membership renewals and payments.
+            </li>
+            <li>
+              <img src="assets/images/Icon.png" />
+              <strong>National Associations:</strong> Our membership management software provides full automation of membership renewals and payments.
+            </li>
+            <li>
+              <img src="assets/images/Icon.png" />
+              <strong>Clubs And Groups:</strong> Our membership management software provides full automation of membership renewals and payments.
+            </li>
+          </ul>
+        </div>
+        <div class="community-image">
+          <img src="assets/images/Frame35.png" alt="Manage Community" />
+        </div>
       </div>
     </section>
 
-    <!-- products -->
-    <section id="offer">
-      <div><img src="assets/images/Illustration.png" /></div>
-      <div>
-        <h2>How to design your site footer like we did</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. At quidem dignissimos
-          officiis modi, quisquam laudantium. Laborum ducimus atque dolor
-          aliquid esse tempore, molestiae,<br />vitae tenetur eaque voluptatum
-          iusto quisquam modi!.<br />
-        </p>
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonial-section">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+        <div class="testimonial-content">
+          <h2>The unseen of spending three years at Pixelgrade</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="signup-btn">Learn More</button>
+        </div>
+        <div class="community-image">
+          <img src="assets/images/Testimonial.png" alt="Testimonial Illustration" />
+        </div>
       </div>
-      <div>1234</div>
-      <div>1234</div>
-      <div>1234</div>
-      <div>1234</div>
     </section>
 
-    <!-- testimonials -->
-    <section id="testimonials">
-      <h2>What Our Clients Say</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container text-center">
+        <h2>Helping a local business reinvent itself</h2>
+        <p class="features-subtext">We reached here with our hard work and dedication</p>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-3 stat-item">
+            <div class="feature-card">
+              <img src="assets/images/Icon1.png" alt="Members Icon" />
+              <h5>2,245,341</h5>
+              <p>Members</p>
+            </div>
+          </div>
+          <div class="col-md-3 stat-item">
+            <div class="feature-card">
+              <img src="assets/images/Icon2.png" alt="Clubs Icon" />
+              <h5>46,328</h5>
+              <p>Clubs</p>
+            </div>
+          </div>
+          <div class="col-md-3 stat-item">
+            <div class="feature-card">
+              <img src="assets/images/Icon3.png" alt="Event Bookings Icon" />
+              <h5>828,867</h5>
+              <p>Event Bookings</p>
+            </div>
+          </div>
+          <div class="col-md-3 stat-item">
+            <div class="feature-card">
+              <img src="assets/images/Icon4.png" alt="Payments Icon" />
+              <h5>1,926,436</h5>
+              <p>Payments</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container text-center">
+        <h2>Pellententesque suscipit fringilla libero eu.</h2>
+        <button class="signup-btn">Get a Demo</button>
+      </div>
     </section>
-    <!-- footer -->
+
+    <!-- Footer -->
     <footer>
-      <p>© 2025 Your Website. All rights reserved.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="logo">
+              <img class="icon" src="assets/images/Icon.png" alt="Icon" />
+              <img src="assets/images/Nexcent.png" alt="Website Logo" />
+            </div>
+            <p>Copyright © 2020 Nexcent Ltd.</p>
+            <p>All rights reserved</p>
+            <div class="social-icons">
+              <img src="assets/images/Social1.png" alt="Social 1" />
+              <img src="assets/images/Social2.png" alt="Social 2" />
+              <img src="assets/images/Social3.png" alt="Social 3" />
+              <img src="assets/images/Social4.png" alt="Social 4" />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Stay up to date</h5>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email address" />
+              <button class="btn btn-light" type="button">➤</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

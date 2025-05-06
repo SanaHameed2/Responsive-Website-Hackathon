@@ -6,12 +6,12 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #212529;
   background-color: #fff;
 }
 
-/* ===== Utility Container ===== */
+/* ===== Utility Styles ===== */
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -19,12 +19,57 @@ body {
   margin: 0 auto;
 }
 
+#clients,
+#community,
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== Button Styles (Global) ===== */
+.reg-btn,
+.register-btn,
+.signup-btn,
+.btn-light {
+  background-color: #4caf4f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  font-weight: 400;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reg-btn:hover,
+.register-btn:hover,
+.signup-btn:hover,
+.btn-light:hover {
+  background-color: #2e7531;
+  transform: scale(1.05);
+}
+
+.Hero-btn .register-btn {
+  padding: 0.6rem 1.5rem;
+}
+
+.cta-section .signup-btn {
+  padding: 0.6rem 1.5rem;
+}
+
+footer .btn-light {
+  border-radius: 0 4px 4px 0;
+  padding: 0.375rem 0.75rem;
+}
+
 /* ===== Navbar ===== */
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1em;
   flex-wrap: wrap;
   z-index: 1000;
 }
@@ -40,11 +85,14 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-left: 40px;
   justify-content: flex-end;
 }
 
-.nav-links li a {
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
   text-decoration: none;
   color: #212529;
   font-weight: 500;
@@ -53,17 +101,6 @@ body {
 .nav-buttons {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
-}
-
-.reg-btn {
-  background-color: #4CAF4F;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1.1rem;
-  border-radius: 4px;
-  font-weight: 400;
-  margin-right: 0;
 }
 
 /* Hamburger Menu (Mobile) */
@@ -75,17 +112,6 @@ body {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-}
-#clients,
-#features,
-#community,
-#testimonials,
-.cta-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 /* ===== Header Section ===== */
@@ -100,13 +126,13 @@ header {
 }
 
 .content-left h1 {
-  font-size: 2.5rem;
+  font-size: 44px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 52.9px;
 }
 
 .color-txt {
-  color: #4CAF4F;
+  color: #4caf4f;
 }
 
 .content-left p {
@@ -117,12 +143,6 @@ header {
 
 .Hero-btn .register-btn {
   margin-top: 1.5rem;
-  background-color: #4CAF4F;
-  border: none;
-  color: white;
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 600;
 }
 
 .content-right .img-hero {
@@ -136,7 +156,7 @@ header {
   background-color: #fff;
 }
 
-.clients-section h2{
+.clients-section h2 {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -157,7 +177,6 @@ header {
   text-indent: 0;
   margin: 0 auto;
 }
-
 
 /* ===== Community Section ===== */
 .community-section {
@@ -182,6 +201,7 @@ header {
   font-size: 1rem;
   color: #555;
 }
+
 .community-content h5 {
   font-size: 2rem;
   font-weight: 700;
@@ -236,87 +256,101 @@ header {
 
 .signup-btn {
   margin-top: 1.5rem;
-  background-color: #4CAF4F;
-  border: none;
-  color: white;
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 600;
 }
 
 /* ===== Features Section ===== */
 .features-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #4caf4f;
+}
+
+.features-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #4d4d4d;
 }
 
 .features-subtext {
-  color: #555;
-  margin-bottom: 2rem;
+  color: #666;
+  font-size: 0.875rem;
 }
 
 .feature-card {
-  background-color: #f0fdf4;
-  padding: 2rem 1rem;
-  border-radius: 8px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature-card img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 1rem;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.25rem;
 }
 
 .feature-card h5 {
   font-size: 1.25rem;
   font-weight: 700;
+  color: #4d4d4d;
+  margin-bottom: 0.25rem;
 }
 
 .feature-card p {
-  margin-top: 0.5rem;
-  color: #777;
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
 }
 
 /* ===== CTA Section ===== */
 .cta-section {
   padding: 4rem 0;
-  background-color: #4CAF4F;
   color: #fff;
   text-align: center;
 }
 
 .cta-section h2 {
-  font-size: 2rem;
+  font-size: 44px;
   font-weight: 700;
+  color: #263238;
 }
 
 .cta-section .signup-btn {
   margin-top: 1.5rem;
-  background-color: #fff;
-  color: #4CAF4F;
-  border: none;
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 600;
 }
 
 /* ===== Footer ===== */
 footer {
   padding: 4rem 0;
-  background-color: #263238;
+  background-color: #1a1a1a;
   color: #fff;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 3rem;
 }
 
 footer .logo {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: #ccc;
+  margin: 1rem 0;
 }
 
 footer h5 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: #00cc00;
 }
 
 footer ul {
@@ -330,25 +364,30 @@ footer ul li a {
   font-size: 0.95rem;
 }
 
+footer .social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
 footer .social-icons img {
   width: 24px;
   height: 24px;
-  margin-right: 0.5rem;
-  cursor: pointer;
+}
+
+footer .input-group {
+  margin-top: 1rem;
 }
 
 footer .form-control {
   border-radius: 4px 0 0 4px;
-}
-
-footer .btn-light {
-  border-radius: 0 4px 4px 0;
-  background-color: #4CAF4F;
-  color: white;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ccc;
 }
 
 /* ===== Media Queries ===== */
 @media (max-width: 768px) {
+  /* Navbar */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -366,5 +405,37 @@ footer .btn-light {
 
   .nav-buttons {
     margin-top: 1rem;
+  }
+
+  /* Features Section */
+  .features-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-card img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .feature-card h5 {
+    font-size: 1.25rem;
+  }
+
+  .feature-card p {
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  footer .row {
+    text-align: center;
+  }
+
+  .footer-left {
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .col-md-3, .col-md-2 {
+    margin-bottom: 2rem;
   }
 }

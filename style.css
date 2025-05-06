@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #212529;
   background-color: #fff;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .reg-btn {
-  background-color: #4CAF4F;
+  background-color: #4caf4f;
   color: #fff;
   border: none;
   padding: 0.5rem 1.1rem;
@@ -79,7 +79,6 @@ body {
 #clients,
 #features,
 #community,
-#testimonials,
 .cta-section {
   display: flex;
   flex-direction: column;
@@ -100,13 +99,13 @@ header {
 }
 
 .content-left h1 {
-  font-size: 2.5rem;
+  font-size: 44px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 52.9px;
 }
 
 .color-txt {
-  color: #4CAF4F;
+  color: #4caf4f;
 }
 
 .content-left p {
@@ -117,7 +116,7 @@ header {
 
 .Hero-btn .register-btn {
   margin-top: 1.5rem;
-  background-color: #4CAF4F;
+  background-color: #4caf4f;
   border: none;
   color: white;
   padding: 0.6rem 1.5rem;
@@ -136,7 +135,7 @@ header {
   background-color: #fff;
 }
 
-.clients-section h2{
+.clients-section h2 {
   font-size: 2rem;
   font-weight: 600;
 }
@@ -157,7 +156,6 @@ header {
   text-indent: 0;
   margin: 0 auto;
 }
-
 
 /* ===== Community Section ===== */
 .community-section {
@@ -236,7 +234,7 @@ header {
 
 .signup-btn {
   margin-top: 1.5rem;
-  background-color: #4CAF4F;
+  background-color: #4caf4f;
   border: none;
   color: white;
   padding: 0.6rem 1.5rem;
@@ -280,7 +278,7 @@ header {
 /* ===== CTA Section ===== */
 .cta-section {
   padding: 4rem 0;
-  background-color: #4CAF4F;
+  background-color: #4caf4f;
   color: #fff;
   text-align: center;
 }
@@ -293,7 +291,7 @@ header {
 .cta-section .signup-btn {
   margin-top: 1.5rem;
   background-color: #fff;
-  color: #4CAF4F;
+  color: #4caf4f;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 5px;
@@ -343,7 +341,7 @@ footer .form-control {
 
 footer .btn-light {
   border-radius: 0 4px 4px 0;
-  background-color: #4CAF4F;
+  background-color: #4caf4f;
   color: white;
 }
 

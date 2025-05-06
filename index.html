@@ -2,27 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Website</title>
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- ========== Navbar ========== -->
     <nav class="nav-bar">
       <div class="logo">
         <img class="icon" src="assets/images/Icon.png" alt="Icon" />
@@ -43,86 +36,130 @@
       </div>
     </nav>
 
-    <!-- Header Section -->
+    <!-- ========== Header Section ========== -->
     <header id="home">
-      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center"
+      >
         <div class="content-left">
           <h1>
-            Lessons and insights<br />
-            <span class="color-txt">from 8 years</span>
+            Lessons and insights <br /><span class="color-txt"
+              >from 8 years</span
+            >
           </h1>
           <p>
-            Where should you grow your business as a photographer: a website or social media?
+            Where should you grow your business as a photographer: a website or
+            social media?
           </p>
           <div class="Hero-btn">
             <button class="register-btn">Register</button>
           </div>
         </div>
         <div class="content-right">
-          <img class="img-hero" src="assets/images/Illustration.png" alt="Hero Illustration" />
+          <img
+            class="img-hero"
+            src="assets/images/Illustration.png"
+            alt="Hero Illustration"
+          />
         </div>
       </div>
     </header>
 
-    <!-- Our Clients Section -->
+    <!-- ========== Our Clients Section ========== -->
     <section id="clients" class="clients-section">
       <div class="container text-center">
         <h2>Our Clients</h2>
-        <p class="client-subtext">We have been working with some Fortune 500+ clients</p>
+        <p class="client-subtext">
+          We have been working with some Fortune 500+ clients
+        </p>
         <div class="client-logos">
           <img src="assets/images/Clients Logos.png" alt="Client 1" />
         </div>
       </div>
     </section>
 
-    <!-- Manage Community Section -->
-    <section id="community" class="community-section">
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
-        <div class="community-content">
-          <h2>Manage your entire community <br />in a single system</h2>
-          <p>Who is Nextcent suitable for?</p>
-          <ul class="community-list">
-            <li>
-              <img src="assets/images/Icon.png" />
-              <strong>Membership Organisations:</strong> Our membership management software provides full automation of membership renewals and payments.
-            </li>
-            <li>
-              <img src="assets/images/Icon.png" />
-              <strong>National Associations:</strong> Our membership management software provides full automation of membership renewals and payments.
-            </li>
-            <li>
-              <img src="assets/images/Icon.png" />
-              <strong>Clubs And Groups:</strong> Our membership management software provides full automation of membership renewals and payments.
-            </li>
-          </ul>
+    <!-- ========== Manage Community Section ========== -->
+<section id="community" class="community-section">
+  <div class="container">
+    <div class="community-content text-center">
+      <h2>Manage your entire community <br />in a single system</h2>
+      <p>Who is Nexcent suitable for?</p>
+      <div class="row justify-content-center g-4 mt-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="client-card text-center p-4">
+            <img
+              src="assets/images/Icon (3).png"
+              alt="Icon 1"
+              class="mb-3 img-fluid"
+            />
+            <h5>Membership Organisations</h5>
+            <p class="text-muted small">
+              Our membership management software provides full automation of
+              membership renewals and payments.
+            </p>
+          </div>
         </div>
-        <div class="community-image">
-          <img src="assets/images/Frame35.png" alt="Manage Community" />
+        <div class="col-md-6 col-lg-4">
+          <div class="client-card text-center p-4">
+            <img
+              src="assets/images/Icon (2).png"
+              alt="Icon 2"
+              class="mb-3 img-fluid"
+            />
+            <h5>National Associations</h5>
+            <p class="text-muted small">
+              Our membership management software provides full automation of membership renewals and payments
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="client-card text-center p-4">
+            <img
+              src="assets/images/Icon (4).png"
+              alt="Icon 3"
+              class="mb-3 img-fluid"
+            />
+            <h5>Clubs And Groups</h5>
+            <p class="text-muted small">
+              Our membership management software provides full automation of membership renewals and payments
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Testimonial Section -->
+
+    <!-- ========== Testimonial Section ========== -->
     <section id="testimonials" class="testimonial-section">
-      <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div
+        class="container d-flex flex-wrap align-items-center justify-content-between"
+      >
+        <div class="community-image">
+          <img
+            src="assets/images/Testimonial.png"
+            alt="Testimonial Illustration"
+          />
+        </div>
         <div class="testimonial-content">
           <h2>The unseen of spending three years at Pixelgrade</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <button class="signup-btn">Learn More</button>
-        </div>
-        <div class="community-image">
-          <img src="assets/images/Testimonial.png" alt="Testimonial Illustration" />
         </div>
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- ========== Features Section ========== -->
     <section id="features" class="features-section">
       <div class="container text-center">
         <h2>Helping a local business reinvent itself</h2>
-        <p class="features-subtext">We reached here with our hard work and dedication</p>
+        <p class="features-subtext">
+          We reached here with our hard work and dedication
+        </p>
         <div class="row justify-content-center g-4">
           <div class="col-md-3 stat-item">
             <div class="feature-card">
@@ -156,7 +193,7 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- ========== CTA Section ========== -->
     <section class="cta-section">
       <div class="container text-center">
         <h2>Pellententesque suscipit fringilla libero eu.</h2>
@@ -164,7 +201,7 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ========== Footer ========== -->
     <footer>
       <div class="container">
         <div class="row">
@@ -196,21 +233,16 @@
             <h5>Support</h5>
             <ul>
               <li><a href="#">Help center</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Legal</a></li>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Status</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Knowledgebase</a></li>
             </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Stay up to date</h5>
-            <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Your email address" />
-              <button class="btn btn-light" type="button">➤</button>
-            </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

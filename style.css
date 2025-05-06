@@ -26,8 +26,6 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0;
   z-index: 1000;
 }
 
@@ -42,6 +40,8 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  margin-left: 40px;
+  justify-content: flex-end;
 }
 
 .nav-links li a {
@@ -75,6 +75,17 @@ body {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+}
+#clients,
+#features,
+#community,
+#testimonials,
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* ===== Header Section ===== */
@@ -125,6 +136,11 @@ header {
   background-color: #fff;
 }
 
+.clients-section h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .client-subtext {
   color: #555;
   margin-top: 0.5rem;
@@ -136,14 +152,24 @@ header {
   margin-top: 2rem;
 }
 
+.client-card p {
+  text-align: center;
+  text-indent: 0;
+  margin: 0 auto;
+}
+
+
 /* ===== Community Section ===== */
 .community-section {
   padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .community-content {
   flex: 1;
-  padding-right: 2rem;
+  padding-right: 2.1rem;
 }
 
 .community-content h2 {
@@ -155,6 +181,10 @@ header {
   margin-top: 1rem;
   font-size: 1rem;
   color: #555;
+}
+.community-content h5 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .community-list {

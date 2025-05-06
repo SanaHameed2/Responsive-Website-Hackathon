@@ -43,7 +43,7 @@ body {
   justify-content: flex-end;
 }
 
-.nav-links li{
+.nav-links li {
   text-decoration: none;
   color: #212529;
   font-weight: 500;
@@ -256,7 +256,7 @@ header {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .features-subtext {
@@ -280,7 +280,7 @@ header {
 .feature-card h5 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin-bottom: 0.25rem;
 }
 
@@ -305,8 +305,8 @@ header {
 
 .cta-section .signup-btn {
   margin-top: 1.5rem;
-  background-color:#4CAF4F ;
-  color:white;
+  background-color: #4caf4f;
+  color: white;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 5px;
@@ -316,20 +316,33 @@ header {
 /* ===== Footer ===== */
 footer {
   padding: 4rem 0;
-  background-color: #263238;
+  background-color: #1a1a1a;
   color: #fff;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 3rem; 
 }
 
 footer .logo {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: #ccc;
+  margin: 1rem 0;
 }
 
 footer h5 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  color: #00cc00;
 }
 
 footer ul {
@@ -343,23 +356,33 @@ footer ul li a {
   font-size: 0.95rem;
 }
 
+footer .social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
 footer .social-icons img {
   width: 24px;
   height: 24px;
-  margin-right: 0.5rem;
-  cursor: pointer;
+}
+
+footer .input-group {
+  margin-top: 1rem;
 }
 
 footer .form-control {
   border-radius: 4px 0 0 4px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ccc;
 }
 
 footer .btn-light {
   border-radius: 0 4px 4px 0;
   background-color: #4caf4f;
   color: white;
+  border: none;
 }
-
 /* ===== Media Queries ===== */
 @media (max-width: 768px) {
   .nav-links {
@@ -381,22 +404,22 @@ footer .btn-light {
     margin-top: 1rem;
   }
   /* Responsive adjustments */
-@media (max-width: 768px) {
-  .features-section h2 {
-    font-size: 1.5rem;
-  }
+  @media (max-width: 768px) {
+    .features-section h2 {
+      font-size: 1.5rem;
+    }
 
-  .feature-card img {
-    width: 20px;
-    height: 20px;
-  }
+    .feature-card img {
+      width: 20px;
+      height: 20px;
+    }
 
-  .feature-card h5 {
-    font-size: 1.25rem;
-  }
+    .feature-card h5 {
+      font-size: 1.25rem;
+    }
 
-  .feature-card p {
-    font-size: 0.75rem;
+    .feature-card p {
+      font-size: 0.75rem;
+    }
   }
-}
 }

@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1em;
   flex-wrap: wrap;
   z-index: 1000;
 }
@@ -40,11 +40,16 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-left: 40px;
   justify-content: flex-end;
 }
 
-.nav-links li a {
+.nav-links li{
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.nav-links a {
   text-decoration: none;
   color: #212529;
   font-weight: 500;
@@ -53,7 +58,6 @@ body {
 .nav-buttons {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
 }
 
 .reg-btn {
@@ -63,7 +67,7 @@ body {
   padding: 0.5rem 1.1rem;
   border-radius: 4px;
   font-weight: 400;
-  margin-right: 0;
+  margin-left: 1rem;
 }
 
 /* Hamburger Menu (Mobile) */
@@ -77,7 +81,6 @@ body {
   cursor: pointer;
 }
 #clients,
-#features,
 #community,
 .cta-section {
   display: flex;
@@ -241,57 +244,69 @@ header {
   border-radius: 5px;
   font-weight: 600;
 }
-
 /* ===== Features Section ===== */
 .features-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #4caf4f;
+}
+
+.features-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #4D4D4D;
 }
 
 .features-subtext {
-  color: #555;
-  margin-bottom: 2rem;
+  color: #666;
+  font-size: 0.875rem;
 }
 
 .feature-card {
-  background-color: #f0fdf4;
-  padding: 2rem 1rem;
-  border-radius: 8px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature-card img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 1rem;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.25rem;
 }
 
 .feature-card h5 {
   font-size: 1.25rem;
   font-weight: 700;
+  color: #4D4D4D;
+  margin-bottom: 0.25rem;
 }
 
 .feature-card p {
-  margin-top: 0.5rem;
-  color: #777;
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
 }
 
 /* ===== CTA Section ===== */
 .cta-section {
   padding: 4rem 0;
-  background-color: #4caf4f;
   color: #fff;
   text-align: center;
 }
 
 .cta-section h2 {
-  font-size: 2rem;
+  font-size: 44px;
   font-weight: 700;
+  color: #263238;
 }
 
 .cta-section .signup-btn {
   margin-top: 1.5rem;
-  background-color: #fff;
-  color: #4caf4f;
+  background-color:#4CAF4F ;
+  color:white;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 5px;
@@ -365,4 +380,23 @@ footer .btn-light {
   .nav-buttons {
     margin-top: 1rem;
   }
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-card img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .feature-card h5 {
+    font-size: 1.25rem;
+  }
+
+  .feature-card p {
+    font-size: 0.75rem;
+  }
+}
 }

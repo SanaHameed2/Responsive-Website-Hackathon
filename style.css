@@ -42,7 +42,6 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin-left: auto;
 }
 
 .nav-links li a {
@@ -51,13 +50,20 @@ body {
   font-weight: 500;
 }
 
-.nav-buttons .reg-btn {
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.reg-btn {
   background-color: #4CAF4F;
   color: #fff;
   border: none;
   padding: 0.5rem 1.1rem;
   border-radius: 4px;
   font-weight: 400;
+  margin-right: 0;
 }
 
 /* Hamburger Menu (Mobile) */
@@ -69,27 +75,6 @@ body {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #f8f9fa;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-buttons {
-    margin-top: 1rem;
-  }
 }
 
 /* ===== Header Section ===== */
@@ -330,4 +315,26 @@ footer .btn-light {
   border-radius: 0 4px 4px 0;
   background-color: #4CAF4F;
   color: white;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #f8f9fa;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-buttons {
+    margin-top: 1rem;
+  }
 }

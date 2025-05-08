@@ -1,7 +1,5 @@
 /* ===== Global Styles ===== */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,24 +7,6 @@ body {
   font-family: "Inter", sans-serif;
   color: #212529;
   background-color: #fff;
-}
-
-/* ===== Utility Styles ===== */
-.container {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#clients,
-#community,
-.cta-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 /* ===== Button Styles (Global) ===== */
@@ -55,7 +35,7 @@ body {
   padding: 0.6rem 1.5rem;
 }
 
-.cta-section .signup-btn {
+.testimonial-section .signup-btn {
   padding: 0.6rem 1.5rem;
 }
 
@@ -66,30 +46,16 @@ footer .btn-light {
 
 /* ===== Navbar ===== */
 .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
-  flex-wrap: wrap;
   z-index: 1000;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-left: 60px;
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  justify-content: flex-end;
-}
-
-.nav-links li {
-  margin-left: 20px;
 }
 
 .nav-links a {
@@ -100,16 +66,25 @@ footer .btn-light {
 
 .nav-buttons {
   display: flex;
-  align-items: center;
+  margin-left: auto;
 }
 
-/* Hamburger Menu (Mobile) */
-#menu-toggle {
-  display: none;
+/* Desktop Navbar Adjustments */
+@media (min-width: 992px) {
+  .nav-links {
+    margin-left: 10%;
+  }
+}
+
+/* Mobile Navbar Adjustments */
+@media (max-width: 991.98px) {
+  .nav-buttons {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 }
 
 .menu-icon {
-  display: none;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -117,12 +92,6 @@ footer .btn-light {
 /* ===== Header Section ===== */
 header {
   background-color: #f8f9fa;
-  padding: 4rem 0;
-}
-
-.content-left {
-  flex: 1;
-  padding-right: 2rem;
 }
 
 .content-left h1 {
@@ -136,13 +105,8 @@ header {
 }
 
 .content-left p {
-  margin-top: 1rem;
   font-size: 1rem;
   color: #555;
-}
-
-.Hero-btn .register-btn {
-  margin-top: 1.5rem;
 }
 
 .content-right .img-hero {
@@ -152,7 +116,6 @@ header {
 
 /* ===== Clients Section ===== */
 .clients-section {
-  padding: 4rem 0;
   background-color: #fff;
 }
 
@@ -163,41 +126,25 @@ header {
 
 .client-subtext {
   color: #555;
-  margin-top: 0.5rem;
 }
 
 .client-logos img {
   max-width: 100%;
   height: auto;
-  margin-top: 2rem;
 }
 
 .client-card p {
   text-align: center;
   text-indent: 0;
-  margin: 0 auto;
 }
 
 /* ===== Community Section ===== */
-.community-section {
-  padding: 4rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.community-content {
-  flex: 1;
-  padding-right: 2.1rem;
-}
-
 .community-content h2 {
   font-size: 2rem;
   font-weight: 700;
 }
 
 .community-content p {
-  margin-top: 1rem;
   font-size: 1rem;
   color: #555;
 }
@@ -206,41 +153,14 @@ header {
   font-size: 2rem;
   font-weight: 700;
 }
-
-.community-list {
-  list-style: none;
-  margin-top: 2rem;
-  padding-left: 0;
-}
-
-.community-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-.community-list img {
-  width: 24px;
-  height: 24px;
-  margin-top: 4px;
-}
-
-.community-image img {
-  max-width: 100%;
-  height: auto;
+.client-card img {
+  width: 70px;
+  height: 70px;
 }
 
 /* ===== Testimonial Section ===== */
 .testimonial-section {
-  padding: 4rem 0;
   background-color: #f9f9f9;
-}
-
-.testimonial-content {
-  flex: 1;
-  padding-right: 2rem;
 }
 
 .testimonial-content h2 {
@@ -249,27 +169,19 @@ header {
 }
 
 .testimonial-content p {
-  margin-top: 1rem;
   font-size: 1rem;
   color: #555;
 }
 
-.signup-btn {
-  margin-top: 1.5rem;
-}
-
 /* ===== Features Section ===== */
 .features-section {
-  padding: 2rem 0;
   background-color: #f9f9f9;
-  border-bottom: 2px solid #4caf4f;
 }
 
 .features-section h2 {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 0.5rem;
   color: #4d4d4d;
 }
 
@@ -288,74 +200,39 @@ header {
 .feature-card img {
   width: 32px;
   height: 32px;
-  margin-bottom: 0.25rem;
 }
 
 .feature-card h5 {
   font-size: 1.25rem;
   font-weight: 700;
   color: #4d4d4d;
-  margin-bottom: 0.25rem;
 }
 
 .feature-card p {
   font-size: 0.75rem;
   color: #666;
-  margin: 0;
 }
-
-/* ===== CTA Section ===== */
-.cta-section {
-  padding: 4rem 0;
-  color: #fff;
-  text-align: center;
-}
-
-.cta-section h2 {
-  font-size: 44px;
+/* ===== CTA Section Styling ===== */
+.cta-section .color-txt {
+  color: #4e4e4e;
   font-weight: 700;
-  color: #263238;
-}
-
-.cta-section .signup-btn {
-  margin-top: 1.5rem;
+  padding: 20px 0;
 }
 
 /* ===== Footer ===== */
 footer {
-  padding: 4rem 0;
   background-color: #1a1a1a;
   color: #fff;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 3rem;
-}
-
-footer .logo {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 footer p {
   font-size: 0.875rem;
   color: #ccc;
-  margin: 1rem 0;
 }
 
 footer h5 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #00cc00;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
+  color: white;
 }
 
 footer ul li a {
@@ -364,18 +241,9 @@ footer ul li a {
   font-size: 0.95rem;
 }
 
-footer .social-icons {
-  display: flex;
-  gap: 0.5rem;
-}
-
 footer .social-icons img {
   width: 24px;
   height: 24px;
-}
-
-footer .input-group {
-  margin-top: 1rem;
 }
 
 footer .form-control {
@@ -383,59 +251,4 @@ footer .form-control {
   background-color: #333;
   border: 1px solid #555;
   color: #ccc;
-}
-
-/* ===== Media Queries ===== */
-@media (max-width: 768px) {
-  /* Navbar */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #f8f9fa;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-buttons {
-    margin-top: 1rem;
-  }
-
-  /* Features Section */
-  .features-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .feature-card img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .feature-card h5 {
-    font-size: 1.25rem;
-  }
-
-  .feature-card p {
-    font-size: 0.75rem;
-  }
-
-  /* Footer */
-  footer .row {
-    text-align: center;
-  }
-
-  .footer-left {
-    align-items: center;
-    margin-right: 0;
-  }
-
-  .col-md-3, .col-md-2 {
-    margin-bottom: 2rem;
-  }
 }

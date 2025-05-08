@@ -31,6 +31,14 @@ body {
   transform: scale(1.05);
 }
 
+header,
+.clients-section,
+.community-section,
+.features-section,
+.cta-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .Hero-btn .register-btn {
   padding: 0.6rem 1.5rem;
 }
@@ -46,7 +54,7 @@ footer .btn-light {
 
 /* ===== Navbar ===== */
 .nav-bar {
-  z-index: 1000;
+  background-color: #fff;
 }
 
 .logo {
@@ -55,7 +63,8 @@ footer .btn-light {
 }
 
 .nav-links {
-  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-links a {
@@ -64,29 +73,10 @@ footer .btn-light {
   font-weight: 500;
 }
 
+/* Button group */
 .nav-buttons {
   display: flex;
-  margin-left: auto;
-}
-
-/* Desktop Navbar Adjustments */
-@media (min-width: 992px) {
-  .nav-links {
-    margin-left: 10%;
-  }
-}
-
-/* Mobile Navbar Adjustments */
-@media (max-width: 991.98px) {
-  .nav-buttons {
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-}
-
-.menu-icon {
-  font-size: 1.5rem;
-  cursor: pointer;
+  align-items: center;
 }
 
 /* ===== Header Section ===== */
@@ -112,65 +102,6 @@ header {
 .content-right .img-hero {
   max-width: 100%;
   height: auto;
-}
-
-/* ===== Clients Section ===== */
-.clients-section {
-  background-color: #fff;
-}
-
-.clients-section h2 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.client-subtext {
-  color: #555;
-}
-
-.client-logos img {
-  max-width: 100%;
-  height: auto;
-}
-
-.client-card p {
-  text-align: center;
-  text-indent: 0;
-}
-
-/* ===== Community Section ===== */
-.community-content h2 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.community-content p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.community-content h5 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.client-card img {
-  width: 70px;
-  height: 70px;
-}
-
-/* ===== Testimonial Section ===== */
-.testimonial-section {
-  background-color: #f9f9f9;
-}
-
-.testimonial-content h2 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.testimonial-content p {
-  font-size: 1rem;
-  color: #555;
 }
 
 /* ===== Features Section ===== */
@@ -212,6 +143,67 @@ header {
   font-size: 0.75rem;
   color: #666;
 }
+
+/* ===== Clients Section ===== */
+.clients-section {
+  background-color: #fff;
+}
+
+.clients-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.client-subtext {
+  color: #555;
+}
+
+.client-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.client-card p {
+  text-align: center;
+  text-indent: 0;
+}
+
+/* ===== Community Section ===== */
+.community-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.community-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.community-content h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.client-card img {
+  width: 70px;
+  height: 70px;
+}
+
+/* ===== Testimonial Section ===== */
+.testimonial-section {
+  background-color: #f9f9f9;
+}
+
+.testimonial-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
 /* ===== CTA Section Styling ===== */
 .cta-section .color-txt {
   color: #4e4e4e;
@@ -251,4 +243,10 @@ footer .form-control {
   background-color: #333;
   border: 1px solid #555;
   color: #ccc;
+}
+/* ===== Media Query for Mobile/Tablet Devices ===== */
+@media (max-width: 768px) {
+  .Hero-btn .register-btn {
+    margin-bottom: 1rem;
+  }
 }

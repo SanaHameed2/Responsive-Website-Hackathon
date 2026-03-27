@@ -31,6 +31,261 @@ body {
   transform: scale(1.05);
 }
 
+.Hero-btn .register-btn {
+  padding: 0.6rem 1.5rem;
+}
+
+.testimonial-section .signup-btn {
+  padding: 0.6rem 1.5rem;
+}
+
+footer .btn-light {
+  border-radius: 0 4px 4px 0;
+  padding: 0.375rem 0.75rem;
+}
+
+/* ===== Navbar ===== */
+.nav-bar {
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+/* Desktop Navbar Adjustments */
+@media (min-width: 992px) {
+  .nav-links {
+    margin-left: 10%;
+  }
+}
+
+/* Mobile Navbar Adjustments */
+@media (max-width: 991.98px) {
+  .nav-buttons {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ===== Header Section ===== */
+header {
+  background-color: #f8f9fa;
+}
+
+.content-left h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 52.9px;
+}
+
+.color-txt {
+  color: #4caf4f;
+}
+
+.content-left p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.content-right .img-hero {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Clients Section ===== */
+.clients-section {
+  background-color: #fff;
+}
+
+.clients-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.client-subtext {
+  color: #555;
+}
+
+.client-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.client-card p {
+  text-align: center;
+  text-indent: 0;
+}
+
+/* ===== Community Section ===== */
+.community-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.community-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.community-content h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.client-card img {
+  width: 70px;
+  height: 70px;
+}
+
+/* ===== Testimonial Section ===== */
+.testimonial-section {
+  background-color: #f9f9f9;
+}
+
+.testimonial-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.testimonial-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== Features Section ===== */
+.features-section {
+  background-color: #f9f9f9;
+}
+
+.features-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #4d4d4d;
+}
+
+.features-subtext {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.feature-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-card img {
+  width: 32px;
+  height: 32px;
+}
+
+.feature-card h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.feature-card p {
+  font-size: 0.75rem;
+  color: #666;
+}
+/* ===== CTA Section Styling ===== */
+.cta-section .color-txt {
+  color: #4e4e4e;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+footer .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .form-control {
+  border-radius: 4px 0 0 4px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ccc;
+}
+
+/* ===== Global Styles ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #212529;
+  background-color: #fff;
+}
+
+/* ===== Button Styles (Global) ===== */
+.reg-btn,
+.register-btn,
+.signup-btn,
+.btn-light {
+  background-color: #4caf4f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  font-weight: 400;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reg-btn:hover,
+.register-btn:hover,
+.signup-btn:hover,
+.btn-light:hover {
+  background-color: #2e7531;
+  transform: scale(1.05);
+}
+
 header,
 .clients-section,
 .community-section,
